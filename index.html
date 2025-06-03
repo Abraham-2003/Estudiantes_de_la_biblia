@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>LP Desarrollador Web</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>|</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE NOSOTROS</a></li>
+                            <li><a href="#contenedor-principal" onclick="seleccionar(this)">TRANSCRIPCIONES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">LIBROS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Estudiantes de la biblia</h2>
+                <p class="descripcion">Toda la Escritura es inspirada por Dios, y útil para enseñar, para redargüir,
+                    para corregir, para instruir en justicia, a fin de que el hombre de Dios sea perfecto, enteramente
+                    preparado para toda buena obra.</p>
+                <a href="#contenedor-principal">Ir a Transcripciones</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Sobrenosotros.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Nosotros</p>
+            <h2>Hola <span>Estudiantes de la biblia</span> </h2>
+            <p>Estudiantes de la Biblia es un grupo dedicado al estudio profundo y reflexivo de la Palabra de Dios.
+                Nuestro propósito es crecer en conocimiento, fe y obediencia a través del estudio constante de las
+                Escrituras, compartiendo lo que aprendemos y aplicándolo a nuestra vida diaria.
+                Nos reunimos con un espíritu de humildad y amor, creyendo que toda la Escritura es inspirada por Dios y
+                útil para guiarnos en cada aspecto de nuestra vida. No buscamos imponer ideas, sino descubrir juntos la
+                verdad que transforma corazones y renueva mentes.
+                Creemos que estudiar la Biblia en comunidad fortalece nuestra relación con Dios y con los demás. Por
+                eso, abrimos este espacio para compartir enseñanzas, recursos, reflexiones y todo aquello que edifique
+                al cuerpo de Cristo.
+            </p>
+            <p>"Escudriñad las Escrituras..." (Juan 5:39)</p>
+
+        </div>
+    </section>
+
+    <!-- <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>UI/UX</li>
+                    <li>Responsive</li>
+                </ul>
+                <p>Creo sitios web modernos, funcionales y adaptables a cualquier dispositivo, centrados en la
+                    experiencia del usuario y la velocidad de carga.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Porgramación en Java</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Java</li>
+                    <li>Back-End</li>
+                    <li>Logica</li>
+                </ul>
+                <p>Desarrollo aplicaciones robustas usando Java, aplicando buenas prácticas en lógica, estructuras de
+                    datos y patrones de diseño.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Aplicaciones Web Responsivas</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <p>Construyo interfaces dinámicas y adaptativas que funcionan perfectamente en dispositivos móviles,
+                    tablets y computadoras.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Hosting</li>
+                    <li>Configuración </li>
+                    <li>Dominio</li>
+                </ul>
+                <p>Configuro y administro servicios de hosting para que tu sitio esté siempre en línea con seguridad y
+                    estabilidad.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Diseñador Gráfico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Branding</li>
+                    <li>Ilustración</li>
+                    <li>Logos</li>
+                </ul>
+                <p>Diseño visualmente atractivos logos, banners y materiales gráficos que dan identidad y estilo a tu
+                    marca o proyecto.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Desarrolador de videojuegos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>GameDev</li>
+                    <li>Diseño</li>
+                    <li>Unity</li>
+                </ul>
+                <p>Creo videojuegos sencillos y creativos, enfocados en la jugabilidad y experiencia del usuario, desde
+                    el concepto hasta el prototipo.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="contenedor-skills" id="contenedor-principal">
+        <!-- Vista de todos los libros -->
+        <div id="vista-libros">
+            <h1>Transcripciones</h1>
+            <br>
+            <br>
+            <div class="libros-contenedor" id="lista-libros">
+                <ul class="columna">
+                    <li onclick="abrirLibro('genesis')">Génesis</li>
+                    <li onclick="abrirLibro('exodo')">Éxodo</li>
+                    <li>Levítico</li>
+                    <li>Números</li>
+                    <li>Deuteronomio</li>
+                    <li>Josué</li>
+                    <li>Jueces</li>
+                    <li>Rut</li>
+                    <li onclick="abrirLibro('samuel')">1 Samuel</li>
+                    <li>2 Samuel</li>
+                </ul>
+                <ul class="columna">
+                    <li>1 Reyes</li>
+                    <li>2 Reyes</li>
+                    <li>1 Crónicas</li>
+                    <li>2 Crónicas</li>
+                    <li>Esdras</li>
+                    <li>Nehemías</li>
+                    <li>Ester</li>
+                    <li>Job</li>
+                    <li>Salmos</li>
+                    <li>Proverbios</li>
+                </ul>
+                <ul class="columna">
+                    <li>Eclesiastés</li>
+                    <li>Cantares</li>
+                    <li>Isaías</li>
+                    <li>Jeremías</li>
+                    <li>Lamentaciones</li>
+                    <li>Ezequiel</li>
+                    <li>Daniel</li>
+                    <li>Oseas</li>
+                    <li>Joel</li>
+                    <li>Amós</li>
+                </ul>
+                <ul class="columna">
+                    <li>Abdías</li>
+                    <li>Jonás</li>
+                    <li>Miqueas</li>
+                    <li>Naúm</li>
+                    <li>Habacuc</li>
+                    <li>Sofonías</li>
+                    <li>Hageo</li>
+                    <li>Zacarías</li>
+                    <li>Malaquías</li>
+                </ul>
+                <ul class="columna">
+                    <li>Mateo</li>
+                    <li>Marcos</li>
+                    <li>Lucas</li>
+                    <li>Juan</li>
+                    <li>Hechos</li>
+                    <li>Romanos</li>
+                    <li>1 Corintios</li>
+                    <li>2 Corintios</li>
+                    <li>Gálatas</li>
+                    <li>Efesios</li>
+                </ul>
+                <ul class="columna">
+                    <li>Filipenses</li>
+                    <li>Colosenses</li>
+                    <li>1 Tesalonicenses</li>
+                    <li>2 Tesalonicenses</li>
+                    <li>1 Timoteo</li>
+                    <li>2 Timoteo</li>
+                    <li>Tito</li>
+                    <li>Filemón</li>
+                    <li>Hebreos</li>
+                    <li>Santiago</li>
+                </ul>
+                <ul class="columna">
+                    <li>1 Pedro</li>
+                    <li>2 Pedro</li>
+                    <li>1 Juan</li>
+                    <li>2 Juan</li>
+                    <li>3 Juan</li>
+                    <li>Judas</li>
+                    <li>Apocalipsis</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Vista de un solo libro -->
+        <div id="vista-libro" class="oculto">
+            <div class="encabezado-libro">
+                <span class="flecha-atras" onclick="volver()">←</span>
+                <h2 id="titulo-libro"></h2>
+            </div>
+            <div id="contenido-capitulos"></div>
+        </div>
+    </div>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Libros</h3>
+        <div class="carrusel-wrapper">
+            <button class="btn-carrusel izquierda">⬅</button>
+            <div class="carrusel-libros">
+                <div class="contenedor-libros">
+                    <a href="https://a.co/d/97aIZtc" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro1.jpg" alt="">
+                            <div class="info">
+                                <h4>Mateo</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/4YUUyGb" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro2.jpg" alt="">
+                            <div class="info">
+                                <h4>Marcos</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/8Tiuu2w" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro3.jpg" alt="">
+                            <div class="info">
+                                <h4>Lucas</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/6t5assS" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro4.jpg" alt="">
+                            <div class="info">
+                                <h4>Juan</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/9AhhsA9" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro5.jpg" alt="">
+                            <div class="info">
+                                <p>Hechos de los apostoles</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/dmq4VeM" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro6.jpg" alt="">
+                            <div class="info">
+                                <h4>Romanos</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/3M1YBqJ" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro7.jpg" alt="">
+                            <div class="info">
+                                <h4>Corintios</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/fwYSLnM" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro8.jpg" alt="">
+                            <div class="info">
+                                <h4>Exodo</h4>
+                                <p>Verso por verso</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/2m4eASB" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro9.jpg" alt="">
+                            <div class="info">
+                                <h4>El diezmo</h4>
+                                <p>Conforme a la doctrina de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/gacDZd6" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro10.jpg" alt="">
+                            <div class="info">
+                                <h4>Sincretismo religioso</h4>
+                                <p>Antiguo Testamento</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/4Uiuqg7" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro11.jpg" alt="">
+                            <div class="info">
+                                <h4>Las fiestas de primavera</h4>
+                                <p>Antiguo Testamento</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="btn-carrusel derecha">➡</button>
+        </div>
+    </section>
+
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">1 Corintios. 2:5-10</h3>
+        <div class="contenedor-form">
+            <p>…para que vuestra fe no esté fundada en la sabiduría de los hombres, sino en el poder de Dios. Sin
+                embargo, hablamos sabiduría entre los que han alcanzado madurez; y sabiduría, no de este siglo, ni de
+                los príncipes de este siglo, que perecen. Mas hablamos sabiduría de Dios en misterio, la sabiduría
+                oculta, la cual Dios predestinó antes de los siglos para nuestra gloria, la que ninguno de los príncipes
+                de este siglo conoció; porque si la hubieran conocido, nunca habrían crucificado al Señor de gloria.
+                Antes bien, como está escrito: Cosas que ojo no vio, ni oído oyó, Ni han subido en corazón de hombre,
+                Son las que Dios ha preparado para los que le aman. Pero Dios nos las reveló a nosotros por el Espíritu;
+                porque el Espíritu todo lo escudriña, aun lo profundo de Dios…</p>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Visitanos en nuestras redes sociales</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/share/g/1ELEEQDdVt/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://soundcloud.com/talmid-yisrael" target="_blank"><i class="fab fa-soundcloud"></i></a>
+            <a href="https://www.instagram.com/untranscriptor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@estudiantesdelabiblia1059" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
