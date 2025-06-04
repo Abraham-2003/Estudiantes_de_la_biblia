@@ -85,4 +85,12 @@ function moverCarrusel() {
 window.addEventListener('resize', () => {
   moverCarrusel();
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const sinContenido = document.querySelectorAll('.sin-contenido');
 
+  sinContenido.forEach(item => {
+    item.addEventListener('click', () => {
+      alert('⚠️ Aún no contamos con el contenido de este libro.');
+    });
+  });
+});
